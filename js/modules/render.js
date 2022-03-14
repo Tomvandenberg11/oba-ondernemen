@@ -1,3 +1,5 @@
+const container = document.querySelector(".item-container")
+
 export function render(data) {
   const results = data.results
 

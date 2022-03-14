@@ -1,6 +1,5 @@
 import { render } from "./render.js"
 
-const container = document.querySelector(".item-container")
 const cors = "https://cors-anywhere.herokuapp.com/"
 const endpoint = "https://zoeken.oba.nl/api/v1/search/?q="
 const query = "ondernemen"
