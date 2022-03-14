@@ -5,6 +5,7 @@ export function render(data) {
   console.log("hallo")
 
   results.forEach((item, i) => {
+    console.log(item)
     const html = `
                 <article>
                   <h2>${item.titles[0]}</h2>
