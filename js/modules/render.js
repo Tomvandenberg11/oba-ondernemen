@@ -2,6 +2,7 @@ const container = document.querySelector(".item-container")
 
 export function render(data) {
   const results = data.results
+  console.log("hallo")
 
   results.forEach((item, i) => {
     const html = `
@@ -11,10 +12,10 @@ export function render(data) {
                     item.summaries ? item.summaries[0] : "Geen samenvatting"
                   }</p>
                   <img src="${
-                    item.coverimages ? item.coverimages[1] : "Geen samenvatting"
+                    item.coverimages ? item.coverimages[1] : "Geen foto"
                   }">
                 </article>
               `
-    container.insertAdjacentHTML("afterend", html)
+    container.insertAdjacentHTML("afterbegin", html)
   })
 }
