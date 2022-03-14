@@ -1,0 +1,97 @@
+:root {
+  --font: "Nunito", sans-serif;
+  --black: #000;
+  --white: #fff;
+  --red: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(70deg, var(--red) 30%, var(--white) 30%);
+  box-shadow: 0px 1px 11px -1px #000000;
+}
+
+header .header-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div img {
+  height: 3vw;
+  min-height: 30px;
+}
+
+header div h2 {
+  text-align: center;
+  font-size: calc(16px + 1.5vw);
+  font-weight: 300;
+}
+
+header div div {
+  width: 80px;
+}
+
+/* MAIN */
+
+main .container {
+  width: 70%;
+  padding-top: 50px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+
+.search-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff000003;
+}
+
+.search-container input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  margin-right: 20px;
+  font-size: 20px;
+  height: 30px;
+}
+
+.search-container button {
+  border: 1px solid var(--black);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 20px;
+  height: 50px;
+}
