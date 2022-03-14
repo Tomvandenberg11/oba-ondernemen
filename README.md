@@ -1,6 +1,6 @@
-# Web apps from scratch
+# Project OBA
 
-Welkom bij mijn project van [Web apps from scratch](https://github.com/cmda-minor-web/web-app-from-scratch-2122 "Google's Homepage"). Bij dit van de Minor 'Webdesign and development' is het de bedoeling dat we een single page app gaan maken. Ik heb ervoor gekozen om hierbij de Rijksmuseum API te gebruiken.
+Welkom bij mijn project van [OBA](https://github.com/cmda-minor-web/web-app-from-scratch-2122 "Google's Homepage"). Bij dit van de Minor 'Webdesign and development' is het de bedoeling dat we een single page app gaan maken. Ik heb ervoor gekozen om hierbij de Rijksmuseum API te gebruiken.
 
 De website is [hier](https://tomvandenberg11.github.io/rijksmuseum-app/ "Rijksmuseum app") te zien.
 
