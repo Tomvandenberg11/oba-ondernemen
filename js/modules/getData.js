@@ -15,7 +15,7 @@ const config = {
 export const getData = () => {
   fetch(url, config)
     .then((response) => {
-      return response.json()
+      response.json()
     })
     .then((data) => {
       render(data)

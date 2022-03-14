@@ -2,7 +2,7 @@ const container = document.querySelector(".item-container")
 
 export function render(data) {
   const results = data.results
-  console.log("hallo")
+  console.log(data)
 
   results.forEach((item, i) => {
     console.log(item)
