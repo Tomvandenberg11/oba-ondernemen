@@ -53,6 +53,8 @@ header div div {
 main .container {
   width: 70%;
   padding-top: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
 .search-container {
@@ -94,4 +96,14 @@ main .container {
   color: var(--white);
   font-size: 20px;
   height: 50px;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+article {
+  border: 1px solid black;
+  padding: 15px;
 }
