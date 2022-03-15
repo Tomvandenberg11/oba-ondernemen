@@ -76,19 +76,20 @@ header div div {
 }
 
 .search-container input {
-  padding: 25px 20px;
+  padding: 25px 10px;
   border-radius: 5px;
-  border: 1px solid var(--black);
+  border: none;
   margin-right: 20px;
   font-size: 20px;
   height: 30px;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
+  width: 350px;
 }
 
 .search-container button {
-  border: 1px solid var(--black);
+  border: none;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: var(--red);
