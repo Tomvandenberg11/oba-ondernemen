@@ -1,4 +1,3 @@
-// import { getData } from "./modules/getData.js"
-import { search } from "./modules/search.js"
+import { handleRoutes } from "./modules/router.js"
 
-search()
+handleRoutes()
