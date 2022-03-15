@@ -1,8 +1,10 @@
 import { getData } from "./getData.js"
 const input = document.querySelector("input")
+const h3 = document.querySelector("h3")
+const button = document.querySelector("#search")
 
 export const search = () => {
-  let searchTerm = input.value ? input.value + " cursus" : "ondernemen"
+  let searchTerm = input.value ? input.value : "ondernemen"
 
   const cors = "https://cors-anywhere.herokuapp.com/"
   const endpoint = "https://zoeken.oba.nl/api/v1/search/?q="
@@ -10,8 +12,15 @@ export const search = () => {
   const detail = "Default"
 
   let url = `${cors}${endpoint}${searchTerm}&authorization=${key}&detaillevel=${detail}&output=json`
+
+  h3.innerHTML = input.value
+    ? "Resultaten voor: " + input.value
+    : "Suggesties voor ondernemen"
+
   getData(url)
 }
+
+button.addEventListener("click", () => search())
 
 input.addEventListener("keydown", (e) => {
   // ONLY SEARCHING IF ENTER IS PRESSED
