@@ -22,4 +22,5 @@ export const getData = (id) => {
     .catch((err) => {
       console.log(err)
     })
+    .finally(() => console.log("loaded!"))
 }

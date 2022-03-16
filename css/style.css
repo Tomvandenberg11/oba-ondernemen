@@ -102,7 +102,7 @@ header div div {
 
 .container {
   width: 70%;
-  padding-top: 50px;
+  padding: 50px 0;
   display: block;
   margin: 0 auto;
 }
@@ -146,6 +146,12 @@ article h2 {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .item-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 600px) {

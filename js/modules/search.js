@@ -17,7 +17,8 @@ export const search = () => {
     ? "Resultaten voor: " + input.value
     : "Suggesties voor ondernemen"
 
-  getData(url, id)
+  getData(url)
+  console.log("zoeken")
 }
 
 button.addEventListener("click", () => search())

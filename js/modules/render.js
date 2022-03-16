@@ -1,12 +1,14 @@
+import "../modules/search.js"
+
 export const render = (data, id) => {
-  if (!id) {
+  if (!window.location.hash) {
     collection(data)
   } else {
     item(data, id)
   }
 }
 
-export function collection(data) {
+export const collection = (data) => {
   const container = document.querySelector(".item-container")
   container.innerHTML = ""
 
@@ -18,7 +20,6 @@ export function collection(data) {
                  <a href="#boek/${item.id}">
                   <div>
                     <h2>${item.titles[0]}</h2>
-                    <p><b>${item.authors[0]}</b></p>
                     <p>${
                       item.summaries
                         ? item.summaries[0].length > 150
@@ -44,7 +45,7 @@ const item = (data, id) => {
   console.log(result)
 
   const html = `
-                 <div>
+                 <div class="container">
                     <h2>${result[0].titles[0]}</h2>
                  </div>
                `
