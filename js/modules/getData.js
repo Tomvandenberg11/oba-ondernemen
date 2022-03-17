@@ -21,13 +21,15 @@ export const getData = (id) => {
       // fetch(url2)
       //   .then((response) => response.json())
       .then((data) => {
-        article.classList.remove("loading")
         render(data, id)
       })
       .catch((err) => {
         error()
         console.log(err)
       })
-      .finally(() => console.log("loaded!")),
+      .finally(() => {
+        article.classList.remove("loading")
+        console.log("Data is loaded!")
+      }),
   ])
 }

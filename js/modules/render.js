@@ -9,7 +9,7 @@ export const render = (data, id) => {
   }
 }
 
-export const collection = (data) => {
+const collection = (data) => {
   const container = document.querySelector(".item-container")
   container.innerHTML = ""
 
@@ -26,13 +26,17 @@ export const collection = (data) => {
                     <div>
                       <h2>${item.titles[0]}</h2>
                       ${
-                        item.year &&
-                        `<p>Jaar van uitgave: ${item.year}</br></br></p>`
+                        item.year
+                          ? "<p>Jaar van uitgave: " +
+                            item.year +
+                            "</br></br></p>"
+                          : ""
                       }
                       <p>${
                         item.summaries
                           ? item.summaries[0].length > 100
-                            ? item.summaries[0].substring(0, 100) + ".."
+                            ? item.summaries[0].substring(0, 100) +
+                              ".. <u>lees verder</u>"
                             : item.summaries[0]
                           : "Geen samenvatting"
                       }</p>
@@ -40,7 +44,7 @@ export const collection = (data) => {
                     ${
                       item.coverimages
                         ? `<img width="50%" src="${item.coverimages[1]}"/>`
-                        : `Geen foto gevonden`
+                        : ``
                     }
                     </a>
                  </article>
