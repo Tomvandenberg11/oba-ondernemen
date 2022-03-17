@@ -13,7 +13,7 @@ export const collection = (data) => {
   const container = document.querySelector(".item-container")
   container.innerHTML = ""
 
-  const results = data.results
+  const results = data.results.reverse()
 
   searchError(data)
 
