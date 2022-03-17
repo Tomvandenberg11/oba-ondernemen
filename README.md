@@ -1,8 +1,8 @@
 # Project OBA
 
-Welkom bij mijn project van [OBA](https://github.com/cmda-minor-web/web-app-from-scratch-2122 "Google's Homepage"). Bij dit van de Minor 'Webdesign and development' is het de bedoeling dat we een single page app gaan maken. Ik heb ervoor gekozen om hierbij de Rijksmuseum API te gebruiken.
+Welkom bij mijn project van [OBA](https://github.com/cmda-minor-web/web-app-from-scratch-2122 "Google's Homepage"). Bij dit van de Minor 'Webdesign and development' is het de bedoeling dat we een single page app gaan maken. Dit is met behulp van de OBA API.
 
-De website is [hier](https://tomvandenberg11.github.io/rijksmuseum-app/ "Rijksmuseum app") te zien.
+De website is [hier](https://tomvandenberg11.github.io/oba-ondernemen/ "Rijksmuseum app") te zien.
 
 <!-- ![Screenshot](images/screenshot.png) -->
 
@@ -20,9 +20,9 @@ De website is [hier](https://tomvandenberg11.github.io/rijksmuseum-app/ "Rijksmu
 
 ## User Story
 
-> As an art lover, I want to be able to search and view art from the Rijksmuseum at home, so that I can still enjoy art during a lockdown
+> Als jonge ondernemer wil ik meer informatie vinden over het opzetten van een onderneming, om zodoende meer kans te hebben op succes.
 
-<!-- ## Activity Diagram -->
+## Activity Diagram
 
 ![Activity](images/activity.png)
 
@@ -35,11 +35,13 @@ De website is gemaakt om de kunst uit het Rijksmuseum te laten zien. De gebruike
 Om de app lokaal te laten draaien moet het project eerst lokaal worden gecloned.
 Als dit stukje code gerunt wordt in de terminal wordt de repository lokaal gecloned:
 
-`gh repo clone tomvandenberg11/rijksmuseum-app`
+`gh repo clone tomvandenberg11/oba-ondernemen`
 
 Ga eerst naar de folder waarin je wilt dat het project gecloned wordt. Je kan in de terminal navigeren met `cd` met daar achter de map waar je heen wilt.
 
 Hierna kan het bestand gewoon geopend worden in de browser door dubbel te klikken op de `index.html`.
+
+Soms is het nodig om de app te draaien door middel van een server. Via VS Code kan dit via de live server extension.
 
 ## API
 
@@ -48,22 +50,18 @@ schilderijen in het Rijksmuseum. Meer informatie over deze API vind je [hier](ht
 
 ## To do
 
-| To do                             | Done? |
-| :-------------------------------- | :---: |
-| Showing all results               |  ✅   |
-| Empty results after search        |  ✅   |
-| Dynamic search                    |  ✅   |
-| Load more images button           |  ✅   |
-| Error states                      |  ✅   |
-| Loading images state              |  ✅   |
-| Modal screen onclick images       |  ✅   |
-| Implement hashing and routing     |  ✅   |
-| Better styling on single art page |       |
-| Enabling full page artwork        |       |
-
-## Rubrics 🅰️
-
-![Rubrics](images/rubrics.png)
+| To do                                                   | Done? |
+| :------------------------------------------------------ | :---: |
+| Zoeken werkend maken                                    |  ✅   |
+| Empty results after search                              |  ✅   |
+| Dynamic search                                          |       |
+| Number of books via api link ?ps                        |       |
+| Error states                                            |  ✅   |
+| Loading images state                                    |  ✅   |
+| Implement hashing and routing                           |  ✅   |
+| Better styling on single art page                       |  ✅   |
+| Link specificeren naar alleen ondernemen en info boeken |       |
+| Fetch andere link naar detail boeken                    |       |
 
 ## Licence 👨🏻‍⚖️
 

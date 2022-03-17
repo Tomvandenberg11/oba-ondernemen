@@ -80,7 +80,7 @@ header div div {
   border-radius: 5px;
   border: none;
   margin-right: 20px;
-  font-size: 20px;
+  font-size: 16px;
   height: 30px;
   position: relative;
   z-index: 2;
@@ -111,6 +111,38 @@ header div div {
   font-size: 32px;
 }
 
+.container h4 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.single-container {
+  width: 70%;
+  padding: 50px 0;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-container div {
+  width: 40vw;
+  margin-left: 40px;
+}
+
+.single-container div h2 {
+  line-height: 26px;
+  margin-top: 40px;
+}
+
+.single-container div p {
+  margin: 10px 0;
+}
+
+.single-container a {
+  color: var(--black);
+}
+
 .item-container {
   margin-top: 25px;
   display: grid;
@@ -126,6 +158,11 @@ article {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.5s;
+  min-height: 200px;
+}
+
+.loading {
+  animation: blinker 1s linear infinite;
 }
 
 article a {
@@ -178,5 +215,11 @@ article h2 {
   }
   .item-container {
     grid-template-columns: 1fr;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
