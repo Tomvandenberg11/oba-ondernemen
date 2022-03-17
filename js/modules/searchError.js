@@ -1,5 +1,5 @@
 export const searchError = (data) => {
-  const input = document.querySelector("input")
+  const input = document.querySelector("input[type='text']")
   const container = document.querySelector(".container")
 
   let inputValue = input.value

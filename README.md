@@ -1,22 +1,21 @@
 # Project OBA
 
-Welkom bij mijn project van [OBA](https://github.com/cmda-minor-web/web-app-from-scratch-2122 "Google's Homepage"). Bij dit van de Minor 'Webdesign and development' is het de bedoeling dat we een single page app gaan maken. Dit is met behulp van de OBA API.
+Welkom bij mijn project van [OBA](https://github.com/cmda-minor-web/web-app-from-scratch-2122 "Minor link"). Bij dit project van de Minor 'Webdesign and development' is het de bedoeling dat we een single page app gaan maken. Dit is met behulp van de OBA API.
 
-De website is [hier](https://tomvandenberg11.github.io/oba-ondernemen/ "Rijksmuseum app") te zien.
+De website is [hier](https://tomvandenberg11.github.io/oba-ondernemen/ "OBA Ondernemen") te zien.
 
-<!-- ![Screenshot](images/screenshot.png) -->
+![Screenshot](images/screenshot.png)
 
 ## Inhoudsopgave
 
-- [User Story](https://github.com/Tomvandenberg11/rijksmuseum-app#user-story)
-- [Activity Diagram](https://github.com/Tomvandenberg11/rijksmuseum-app#activity-diagram)
-- [Hoe te gebruiken?](https://github.com/Tomvandenberg11/rijksmuseum-app#hoe-te-gebruiken)
-- [Installatie](https://github.com/Tomvandenberg11/rijksmuseum-app#installatie)
-- [API](https://github.com/Tomvandenberg11/rijksmuseum-app#api)
-- [To do](https://github.com/Tomvandenberg11/rijksmuseum-app#to-do)
-- [Rubrics](https://github.com/Tomvandenberg11/rijksmuseum-app#rubrics)
-- [Licence](https://github.com/Tomvandenberg11/rijksmuseum-app#licence)
-- [Credits](https://github.com/Tomvandenberg11/rijksmuseum-app#credits)
+- [User Story](https://github.com/Tomvandenberg11/oba-ondernemen#user-story)
+- [Activity Diagram](https://github.com/Tomvandenberg11/oba-ondernemen#activity-diagram)
+- [Hoe te gebruiken?](https://github.com/Tomvandenberg11/oba-ondernemen#hoe-te-gebruiken)
+- [Installatie](https://github.com/Tomvandenberg11/oba-ondernemen#installatie)
+- [API](https://github.com/Tomvandenberg11/oba-ondernemen#api)
+- [To do](https://github.com/Tomvandenberg11/oba-ondernemen#to-do)
+- [Licence](https://github.com/Tomvandenberg11/oba-ondernemen#licence)
+- [Credits](https://github.com/Tomvandenberg11/oba-ondernemen#credits)
 
 ## User Story
 
@@ -24,11 +23,11 @@ De website is [hier](https://tomvandenberg11.github.io/oba-ondernemen/ "Rijksmus
 
 ## Activity Diagram
 
-![Activity](images/activity.png)
+![Activity](images/activity_oba.png)
 
-<!-- ## Hoe te gebruiken?
+## Hoe te gebruiken?
 
-De website is gemaakt om de kunst uit het Rijksmuseum te laten zien. De gebruiker kan door middel van de zoekbalk zoeken op schilders of schilderijen. Ook kan de gebruiker meerdere resultaten inladen door op de 'Laad meer' knop te drukken. Als er op een schilderij geklikt wordt ziet de gebruiker het schilderij in de goede afmetingen, met meer informatie. Ook is er een link te vinden die verwijst naar de Rijksmuseum website, waar nóg meer informatie te zien is over het kunstwerk. -->
+De website is gemaakt om beginnende ondernemers boeken te laten zoeken wat ze bij het ondernemen kan helpen. De gebruiker kan naar schrijver, titel en onderwerp zoeken door middel van de zoekbalk. De resultaten worden gesorteerd op jaartal, zodat nieuwere, relevantere boeken als eerste te zien zijn. Als de gebruiker op het boek klikt gaat de gebruiker naar de detail pagina van het boek, waarbij de gebruiker meer informatie kan lezen en kan doorklikken naar de pagina waarbij de gebruiker kan zien waar het boek beschikbaar is.
 
 ## Installatie ⚙️
 
@@ -45,22 +44,21 @@ Soms is het nodig om de app te draaien door middel van een server. Via VS Code k
 
 ## API
 
-Voor dit project heb ik de API van het Rijksmuseum gebruikt. De API is vrij te gebruiken en bevat zo goed als alle
-schilderijen in het Rijksmuseum. Meer informatie over deze API vind je [hier](https://data.rijksmuseum.nl/object-metadata/api/).
+Voor dit project heb ik de API van de OBA gebruikt en de API van Open Leermaterialen. Beide API's zijn alleen te gebruiken met een private key. De documentatie voor de API's zijn daarom ook niet openbaar, mede doordat de Open Leermaterialen API nog in de staging fase zit.
 
 ## To do
 
 | To do                                                   | Done? |
 | :------------------------------------------------------ | :---: |
-| Zoeken werkend maken                                    |  ✅   |
+| Making search work                                      |  ✅   |
 | Empty results after search                              |  ✅   |
-| Dynamic search                                          |       |
 | Number of books via api link ?ps                        |       |
 | Error states                                            |  ✅   |
+| Sort results on year                                    |  ✅   |
 | Loading images state                                    |  ✅   |
 | Implement hashing and routing                           |  ✅   |
 | Better styling on single art page                       |  ✅   |
-| Link specificeren naar alleen ondernemen en info boeken |       |
+| Link specificeren naar alleen ondernemen en info boeken |  ✅   |
 | Fetch andere link naar detail boeken                    |       |
 
 ## Licence 👨🏻‍⚖️

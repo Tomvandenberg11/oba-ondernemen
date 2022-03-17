@@ -1,5 +1,5 @@
 import { getData } from "./getData.js"
-const input = document.querySelector("input")
+const input = document.querySelector("input[type='text']")
 const h3 = document.querySelector("h3")
 const button = document.querySelector("#search")
 

@@ -15,6 +15,8 @@ export const collection = (data) => {
 
   const results = data.results.reverse()
 
+  results.sort((a, b) => (a.year > b.year ? 1 : -1))
+
   searchError(data)
 
   results.map((item) => {
@@ -23,10 +25,14 @@ export const collection = (data) => {
                   <a href="#boek/${item.id}">
                     <div>
                       <h2>${item.titles[0]}</h2>
+                      ${
+                        item.year &&
+                        `<p>Jaar van uitgave: ${item.year}</br></br></p>`
+                      }
                       <p>${
                         item.summaries
-                          ? item.summaries[0].length > 150
-                            ? item.summaries[0].substring(0, 150) + ".."
+                          ? item.summaries[0].length > 100
+                            ? item.summaries[0].substring(0, 100) + ".."
                             : item.summaries[0]
                           : "Geen samenvatting"
                       }</p>
@@ -61,6 +67,10 @@ const item = (data, id) => {
                         result[0].authors[0]
                           ? `<p><b>${result[0].authors[0]}</b></p>`
                           : `<p>Geen schrijver gevonden</p>`
+                      }
+                      ${
+                        result[0].year &&
+                        `<p><b>Jaar van uitgave:</b> ${result[0].year}</p>`
                       }
                       ${
                         result[0].authors[0]
