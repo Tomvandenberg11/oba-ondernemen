@@ -17,13 +17,12 @@ export const getData = (id) => {
   let url = `${cors}${endpoint}${searchTerm}&authorization=${key}&detaillevel=${detail}&output=json`
   let url2 = `${cors}http://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=${searchTerm}+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=a57b7bbd1cde2f6fb7ce5b3f2d1d96e0&output=json`
 
-  fetch(url),
+  Promise.all([
+    fetch(url).then((response) => response.json()),
     fetch(url2)
-      .then((response) => {
-        article.classList.add("loading")
-        return response.json()
-      })
+      .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         article.classList.remove("loading")
         render(data, id)
       })
@@ -31,5 +30,6 @@ export const getData = (id) => {
         error()
         console.log(err)
       })
-      .finally(() => console.log("loaded!"))
+      .finally(() => console.log("loaded!")),
+  ])
 }
