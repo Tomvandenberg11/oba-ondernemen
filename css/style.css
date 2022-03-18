@@ -38,6 +38,10 @@ header div img {
   min-height: 30px;
 }
 
+header div img:hover {
+  cursor: pointer;
+}
+
 header div h2 {
   text-align: center;
   font-size: calc(16px + 1.5vw);

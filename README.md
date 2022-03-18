@@ -52,14 +52,15 @@ Voor dit project heb ik de API van de OBA gebruikt en de API van Open Leermateri
 | :------------------------------------------------------ | :---: |
 | Making search work                                      |  ✅   |
 | Empty results after search                              |  ✅   |
-| Number of books via api link ?ps                        |       |
 | Error states                                            |  ✅   |
 | Sort results on year                                    |  ✅   |
 | Loading images state                                    |  ✅   |
 | Implement hashing and routing                           |  ✅   |
 | Better styling on single art page                       |  ✅   |
 | Link specificeren naar alleen ondernemen en info boeken |  ✅   |
+| Number of books via api link ?ps                        |       |
 | Fetch andere link naar detail boeken                    |       |
+| Results of both API's in the same array                 |       |
 
 ## Licence 👨🏻‍⚖️
 
