@@ -65,7 +65,7 @@ const item = (data, id) => {
                  <div class="single-container">
                     <img width="300vw" src="${result[0].coverimages[1]}"/>
                     <div>
-                      <a href="./">Terug naar overzicht</a>
+                      <a href="../">Terug naar overzicht</a>
                       <h2>${result[0].titles[0]}</h2>
                       ${
                         result[0].authors[0]
